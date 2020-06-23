@@ -22,5 +22,18 @@ public class ConversionController {
 	        return service.kelvinToCelsius(kelvin);
 	    }
 	    
-	 
+	    @RequestMapping(method = RequestMethod.GET, value = "/ctok/{celsius}")
+	    public double ctok(@PathVariable (value = "celsius") double celsius){
+	        return service.celsiusToKelvin(celsius);
+	    }
+	    
+	    @RequestMapping(method = RequestMethod.GET, value = "/mtok/{miles}")
+	    public double mtok(@PathVariable double miles){
+	        return service.milesToKilometer(miles);
+	    }
+	    
+	    @RequestMapping(method = RequestMethod.GET, value = "/ktom/{kilometer}")
+	    public double ktom(@PathVariable Double  kilometer){
+	        return service.kilometerToMiles(kilometer);
+	    }
 }
