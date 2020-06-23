@@ -14,7 +14,7 @@ public class ConversionServices {
 	}
 
 	// celsius to kelvin
-	public double celSiusToKelvin(double celsius) {
+	public double celsiusToKelvin(double celsius) {
 
 		double kelvin = celsius + 273.15;
 
